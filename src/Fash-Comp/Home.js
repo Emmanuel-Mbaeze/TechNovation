@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import About from "./About";
+import Body from "./Body/Body";
 import Collection from "./Collection";
+import Cover from "./Cover";
 import Featured from "./Featured";
 
 import Header from "./Header";
@@ -9,18 +11,22 @@ import Landingpage from "./Landingpage";
 import Landingpage2 from "./Landingpage2";
 import MenCollection from "./MenCollection";
 import NewsLetter from "./NewsLetter";
+import Slider from "./Slider";
 import WomenCollection from "./WomenCollection";
 
 const Home = () => {
   return (
     <Container>
       <Header />
-      <Landingpage />
+      <Slider />
       <About />
       <Collection />
       <Featured />
-      <Landingpage2 />
+      <Body />
+      <Landingpage />
+      {/* <Landingpage2 /> */}
       <MenCollection />
+      <Cover />
       <WomenCollection />
       <NewsLetter />
     </Container>
@@ -36,5 +42,5 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 `;

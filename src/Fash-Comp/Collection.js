@@ -35,18 +35,36 @@ const Container = styled.div`
   overflow: hidden;
   /* background-color: rosybrown; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   color: white;
+  @media (max-width: 900px) {
+    justify-content: center;
+    background-color: rosybrown;
+    width: 100%;
+  }
+  @media (max-width: 1024px) {
+    width: 97%;
+    justify-content: center;
+  }
 `;
 const Lady = styled.div`
   width: 580px;
   height: 550px;
-  background-image: url("/image/G1.jpg");
+  background-image: url("/image/G1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
+  margin: 10px;
+
+  background-color: #d9ddd9;
+  @media (max-width: 800px) {
+  }
+  @media (max-width: 1024px) {
+    width: 490px;
+  }
   /* margin: 10px; */
 `;
 const Guy = styled.div`
@@ -58,14 +76,19 @@ const Guy = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  @media (max-width: 1024px) {
+    width: 490px;
+  }
 `;
 const Men = styled.div`
   width: 100%;
   height: 330px;
-  background-image: url("/image/B3.jpg");
-  background-position: top;
+  background-image: url("/image/b2.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
+  background-color: #d9ddd9;
 `;
 const Child = styled.div`
   width: 100%;
@@ -79,20 +102,30 @@ const Child = styled.div`
 const Kid1 = styled.div`
   width: 279px;
   height: 100%;
-  background-image: url("/image/G4.jpg");
+  background-image: url("/image/k1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
+  background-color: #d9ddd9;
   /* margin-right: 14px; */
+  @media (max-width: 1024px) {
+    width: 235px;
+  }
 `;
 const Kid2 = styled.div`
   width: 279px;
   height: 100%;
   /* margin-left: 14px; */
-  background-image: url("/image/Gf.jpeg");
+  background-image: url("/image/Gf1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
+  background-color: #d9ddd9;
+  @media (max-width: 1024px) {
+    width: 235px;
+  }
 `;
 // const Container = styled.div``
 // const Container = styled.div``

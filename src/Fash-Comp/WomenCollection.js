@@ -22,11 +22,11 @@ const WomenCollection = () => {
           <Kid2></Kid2>
         </Guy>
         <Lady>
-          <Text>
+          {/* <Text>
             <Text2>44 Products</Text2>
 
             <Text11>Women</Text11>
-          </Text>
+          </Text> */}
         </Lady>
       </Wrap>
     </Container>
@@ -39,7 +39,9 @@ const Container = styled.div`
   min-height: 400px;
   overflow: hidden;
   margin-top: 28px;
-
+  @media (max-width: 1024px) {
+    width: 97%;
+  }
   /* background-color: rosybrown; */
   display: flex;
   justify-content: space-between;
@@ -51,11 +53,12 @@ const Container = styled.div`
 const Lady = styled.div`
   width: 470px;
   height: 400px;
-  background-image: url("/image/G1.jpg");
-  background-position: top;
+  background-image: url("/image/Gj1.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+  background-color: #d9ddd9;
   /* margin: 10px; */
 `;
 const Guy = styled.div`
@@ -66,6 +69,9 @@ const Guy = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 1024px) {
+    width: 500px;
+  }
 `;
 const Kid1 = styled.div`
   width: 279px;
@@ -74,16 +80,24 @@ const Kid1 = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #aaa;
+  background-color: #d9ddd9;
   /* margin-right: 14px; */
+  @media (max-width: 1024px) {
+    width: 240px;
+    /* background-color: antiquewhite; */
+  }
 `;
 const Kid2 = styled.div`
   width: 279px;
   height: 100%;
-  background-color: #aaa;
+  background-color: #d9ddd9;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @media (max-width: 1024px) {
+    width: 240px;
+    /* background-color: antiquewhite; */
+  }
 `;
 
 const Text = styled.div`
@@ -118,7 +132,7 @@ const Text2 = styled.div`
 
 const Top = styled.div`
   width: 90%;
-  height: 120px;
+  height: 90px;
   margin: 10px;
   display: flex;
   flex-direction: column;

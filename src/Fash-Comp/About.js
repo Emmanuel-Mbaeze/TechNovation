@@ -66,7 +66,7 @@ const Circle = styled.div`
   justify-content: center;
 `;
 const Cont = styled.div`
-  width: 320px;
+  width: 300px;
   height: 200px;
   /* background-color: lightslategray; */
   margin: 20px;
@@ -82,4 +82,5 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 `;

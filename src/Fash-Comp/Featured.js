@@ -33,6 +33,13 @@ const Feature = styled.div`
   font-size: 30px;
   font-weight: bold;
   font-family: poppins;
+  @media (max-width: 1024px) {
+    /* width: 490px; */
+  }
+  @media (max-width: 768px) {
+    width: 270px;
+    /* background-color: firebrick; */
+  }
 `;
 const Text = styled.div`
   width: 600px;
@@ -44,4 +51,11 @@ const Text = styled.div`
   justify-content: center;
   align-items: center;
   color: gray;
+  @media (max-width: 1024px) {
+    width: 500px;
+  }
+  @media (max-width: 768px) {
+    width: 450px;
+    /* background-color: rebeccapurple; */
+  }
 `;

@@ -18,11 +18,11 @@ const MenCollection = () => {
       </Top>
       <Wrap>
         <Lady>
-          <Text>
+          {/* <Text>
             <Text2>44 Products</Text2>
 
             <Text11>Men</Text11>
-          </Text>
+          </Text> */}
         </Lady>
         <Guy>
           <Kid1></Kid1>
@@ -39,6 +39,9 @@ const Container = styled.div`
   min-height: 400px;
   overflow: hidden;
   margin-top: 28px;
+  @media (max-width: 1024px) {
+    width: 97%;
+  }
 
   /* background-color: rosybrown; */
   display: flex;
@@ -51,17 +54,21 @@ const Container = styled.div`
 const Lady = styled.div`
   width: 470px;
   height: 400px;
-  background-image: url("/image/B3.jpg");
-  background-position: top;
+  background-image: url("/image/Bz1.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+  background-color: #d9ddd9;
+  margin: 10px;
   /* margin: 10px; */
 `;
 const Guy = styled.div`
   width: 570px;
   height: 400px;
-  /* background-color: antiquewhite; */
+  @media (max-width: 1024px) {
+    width: 500px;
+  }
   /* margin: 10px; */
   display: flex;
   justify-content: space-between;
@@ -70,17 +77,25 @@ const Guy = styled.div`
 const Kid1 = styled.div`
   width: 279px;
   height: 100%;
+  @media (max-width: 1024px) {
+    width: 240px;
+    /* background-color: rebeccapurple; */
+  }
   /* background-image: url("/image/G4.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #aaa;
+  background-color: #d9ddd9;
   /* margin-right: 14px; */
 `;
 const Kid2 = styled.div`
   width: 279px;
   height: 100%;
-  background-color: #aaa;
+  @media (max-width: 1024px) {
+    width: 240px;
+    /* background-color: antiquewhite; */
+  }
+  background-color: #d9ddd9;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -118,7 +133,7 @@ const Text2 = styled.div`
 
 const Top = styled.div`
   width: 90%;
-  height: 120px;
+  height: 90px;
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -153,6 +168,7 @@ const Wrap = styled.div`
   margin-top: 15px;
   /* background-color: #191919; */
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 `;
